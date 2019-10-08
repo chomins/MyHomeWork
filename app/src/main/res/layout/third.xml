@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:stretchColumns="*">
+
+    <TextView
+    android:text="첫번째 숫자 입력"
+
+    />
+    <EditText
+        android:id="@+id/first_num"
+        android:inputType="number">
+
+    </EditText>
+    <TextView android:text="두번째 숫자 입력"
+        />
+    <EditText
+        android:id="@+id/second_num"
+        android:inputType="number"
+        >
+
+    </EditText>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <Button
+            android:id="@+id/btn_plus"
+            android:text="더하기" />
+
+        <Button
+            android:id="@+id/btn_minus"
+            android:text="빼기" />
+
+        <Button
+            android:id="@+id/btn_multiply"
+            android:text="곱하기" />
+
+        <Button
+            android:id="@+id/btn_divide"
+            android:text="나누기" />
+
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="정답은?"
+            >
+        </TextView>
+        <TextView
+            android:text=""
+            android:id="@+id/Result"
+            >
+        </TextView>
+    </TableRow>
+
+</TableLayout>
